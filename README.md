@@ -1,0 +1,2 @@
+# BlueMon
+Lightweight monitoring system
