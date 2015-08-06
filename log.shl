@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
 
-for plugin in $(find plugins -name '*.shl'); do
-  . $plugin
-done
-
 logLoad >> 'logs/load.log'
+logUsers >> 'logs/users.log'

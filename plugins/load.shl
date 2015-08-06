@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 function logLoad() {
-  now=$(date '+%s')
-  load=$(uptime | cut -d',' -f5,6)
-  echo "$now$load"
+  local load=$(echo $dataUptime | cut -d',' -f5,6)
+  echo "$dataNow$load"
 }
