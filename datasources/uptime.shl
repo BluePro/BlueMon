@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-dataUptime=$(uptime);
+function getUptime() {
+  [[ "$dataUptime" ]] || dataUptime=$(LANG= uptime)
+}

@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 
-for datasource in $(find datasources -name '*.shl'); do
-  . $datasource
+for module in $(find datasources plugins -name '*.shl'); do
+  . "$module"
 done
 
-for plugin in $(find plugins -name '*.shl'); do
-  . $plugin
-done

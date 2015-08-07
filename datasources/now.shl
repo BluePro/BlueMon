@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-dataNow=$(date '+%s');
+function getNow() {
+  [[ "$dataNow" ]] || dataNow=$(date '+%s')
+}
