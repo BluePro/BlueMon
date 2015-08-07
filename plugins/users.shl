@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
 
 function logUsers() {
-  local logpath="$1"
   local users=''
   getUptime
   getNow
   [[ "$dataUptime" =~ .*\ ([0-9]+)\ users, ]] && users="${BASH_REMATCH[1]}"
-  echo "$dataNow;$users" >> "$logpath/users.log"
+  echo "$dataNow;$users"
 }

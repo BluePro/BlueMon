@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-logLoad 'logs'
-logUsers 'logs'
+logLoad >> "$logpath/load.log"
+logUsers >> "$logpath/users.log"
