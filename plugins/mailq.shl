@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+function logMailq() {
+  getMailq
+  getNow
+  echo "$dataNow;$dataMailq"
+}

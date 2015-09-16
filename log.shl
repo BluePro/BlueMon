@@ -2,3 +2,4 @@
 
 logLoad >> "$logpath/load.log"
 logUsers >> "$logpath/users.log"
+logMailq >> "$logpath/mailq.log"
