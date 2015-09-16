@@ -4,6 +4,6 @@ function logUsers() {
   local users=''
   getUptime
   getNow
-  [[ "$dataUptime" =~ .*\ ([0-9]+)\ users, ]] && users="${BASH_REMATCH[1]}"
+  [[ "$dataUptime" =~ .*\ ([0-9]+)\ users*, ]] && users="${BASH_REMATCH[1]}"
   echo "$dataNow;$users"
 }
